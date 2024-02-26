@@ -1,0 +1,115 @@
+:root{
+    --overlay:#525050a1; 
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    box-sizing: border-box;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-container{
+    margin-top:50px;
+    padding: 0;
+    width: 100%;
+    height:100%;
+    display: flex;
+    gap:20px;
+    
+}
+
+.card{
+    width:220px;
+    height:350px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: thick double black ;
+    align-items: center;
+    text-align: center;
+    background: url("./img/card_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(10px 10px 4px #000000);
+    cursor:default;
+}
+.card:hover{
+    transform: translateY(-30px);
+    transition: 0.5s;
+}
+.card.center.inferno:hover{
+    filter: drop-shadow(10px 10px 24px rgba(255, 0, 0, 1));
+}
+.card.center.necromantic:hover{
+    filter: drop-shadow(10px 10px 24px rgba(0, 128, 0, 1));
+}
+.card.center.death:hover{
+    filter: drop-shadow(10px 10px 24px rgba(0, 89, 255, 1));
+}
+.pic-div{
+    width:80%;
+    height:40%;
+    margin: 20px;
+}
+.pic-div img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.stat-div{
+    font-size: 1.5rem;
+    justify-content: space-between;
+    color: white;
+    width:90%;
+}
+table{
+    width: 100%;
+}
+h2{
+    text-transform: uppercase;
+}
+.life{
+    color: rgb(124, 0, 0);
+}
+.attack{
+color: red;
+}
+.defend{
+    color: rgb(11, 48, 172);
+}
+.name-div{
+    width: 90%;
+}
+.hide{
+    display: none;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.description-div{
+    height: 40%;
+    width: 90%;
+}
+.description-div p{
+    overflow-y:scroll;
+    scrollbar-width: none;
+    text-align:justify;
+    height: 90%;
+}
+.card.back{
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: var(--overlay);
+    color: white;
+    font-weight: 400;
+}
+.title-div, .name-div{
+    width: 100%;
+    background: black;
+    color: white;
+}
